@@ -1,0 +1,129 @@
+html{
+    font-size: 62.5%;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: aliceblue;
+}
+
+
+#encabezado{
+    background-color:#302f2f;
+    color: aliceblue;
+    display: grid;
+    grid-template-columns: 3fr  2fr;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+}
+
+#encabezado img{
+    width: 125px;
+    height: 125px;
+    aspect-ratio: 1 / 0.8;
+}
+
+#subtituloMenu{
+    font-size: 2.5rem;
+}
+
+h1{
+    font-size: 4.5em;
+    text-align: center;
+}
+
+.tituloPlatilloP{
+    color: #d4af37;
+}
+
+#navegacion{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    font-size: 1.3em;
+    gap: 0.3em;
+}
+
+#navegacion a{
+    padding: 0.3em;
+    text-decoration: none;
+    font-size: 1.3em;
+    color: #d4af37;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+#imagenPrincipal img{
+    height: 500px;
+}
+
+
+
+
+.holi{
+    justify-items: center;
+    font-size: 3rem;
+}
+
+#titulo{
+    font-size: 4em;
+    color: #d4af37;
+    font-style: italic;
+}
+
+.seccion_productos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0.5em;
+    gap: 2em;
+}
+
+.producto{
+    border: 0.2em solid black;
+    box-shadow: 0.2em 0.2em 0.2em black;
+    max-width: 20em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5em;
+}
+
+.producto img{
+    max-width: 100%;
+    height: 40%;
+    object-fit: cover;
+    box-shadow: 0.3em 0.3em 0.3em black;
+}
+
+.precios{
+    font-weight: 900;
+}
+
+.producto button:hover{
+    background-color:#d4af37 ;
+    color: rgb(255, 255, 255);
+}
+
+.carrusel{
+    background-color: rgba(240, 248, 255, 0.161);
+    display: flex;
+    gap: 3em;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}
+
+.op{
+    border: 0.2em solid black;
+    box-shadow: 0.2em 0.2em 0.2em black;
+    padding: 0.2em;
+    flex: 0 0 300px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    scroll-snap-align: end;
+}
