@@ -1,49 +1,516 @@
-html{
+html {
     font-size: 62.5%;
 }
 
-body{
+body {
     padding: 0;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: aliceblue;
+    background-color: #eeeeee;
 }
 
-#encabezado{
-    background-color:#302f2f;
+:root {
+    --color-fondo-principal: #eeeeee;    /* fondoo de todas las pags */
+    --color-texto-oscuro: #0a0a0a;       /* Negro que se usaera en ek texto p*/
+    --color-acento: #D4AF37;             /* aplicar en cosas que ocupen ser resaltadas uwu*/
+    --color-secundario: #555555;         /* color para pie y la barrade arriba */
+    --color-tarjeta: #f5f5f5;            /* fondo de tarjetas */
+    --color-fondo-oscuro: #1c1c1c;       /* esto solo se usa en el hero, NO OLIVDAR plsssss */
+    --color-texto-claro: #ffffff;        /* blanco para texto sobre fondo oscuro */
+}
+
+/*
+----------------------------------
+Esto es el encabezado lu,pra tus pags solo haz 
+un copy paste hasta el otro cuadrito ijijijijijijijiji
+----------------------------------
+*/
+#encabezado {
+    background-color: #302f2f;
     color: aliceblue;
     display: grid;
-    grid-template-columns: 3fr  2fr;
+    grid-template-columns: 3fr 2fr;
     justify-content: center;
     align-items: center;
     position: fixed;
     width: 100%;
+    z-index: 1000;
 }
 
-#encabezado img{
+#encabezado nav a {
+    display: inline-block;
+    padding: 8px 14px;
+    border-radius: 6px;
+    transition: transform 0.3s ease, 
+                box-shadow 0.3s ease, 
+                color 0.3s ease;
+}
+
+#encabezado nav a:hover { /*este es el efecto cuando se pasa el cursor, en la tarea 12 creo q se enesño esto, emi porfis revisalo*/
+    transform: scale(1.08);
+    color: #d4af37;
+    box-shadow: 0 0 12px rgba(212, 175, 55, 0.6);
+}
+
+
+#encabezado img {
     width: 125px;
     height: 125px;
     aspect-ratio: 1 / 0.8;
 }
-
-h1{
-    font-size: 3.5em;
-    text-align: center;
-}
-
-
-#navegacion{
+#navegacion {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     font-size: 1.3em;
     gap: 0.3em;
 }
 
-#navegacion a{
+#navegacion a {
     padding: 0.3em;
     text-decoration: none;
     font-size: 1.3em;
     color: #d4af37;
     background-color: rgb(255, 255, 255);
     text-align: center;
+}
+/*
+----------------------------------
+este es el otro cuadrito ijijijijijijijiji
+----------------------------------
+*/
+#hero {
+    /* El Hero solo maneja el fondo y tiene la altura de la pantalla */
+    height: 81.1vh;
+    width: 100%;
+    margin-top: 0; 
+    
+    /* Configuración de Flexbox para centrar el contenido */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* RECUERDA: AJUSTA ESTA URL CON LA RUTA REAL DE TU IMAGEN */
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), 
+                url('../images/fondo1.jpg'); /* <<-- ¡AJUSTA AQUÍ! */
+    
+    background-repeat: no-repeat; 
+    background-position: center; 
+    background-size: cover; 
+    
+    /* ESTO HACE QUE SOLO EL FONDO SEA ESTÁTICO (PARALLAX) */
+    background-attachment: fixed; 
+}
+
+.hero-contenido {
+    /* CORRECCIÓN: Eliminamos 'position: fixed' para que el contenido scrollee */
+    /* Lo centramos usando Flexbox en el contenedor #hero */
+
+    max-width: 90%; 
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 12px;
+    text-align: center;
+    z-index: 10; /* Aseguramos que esté por encima del fondo, pero ya no es fixed */
+}
+
+.logo-principal {
+    font-size: clamp(3em, 8vw, 5.5em); 
+    font-weight: 900;
+    color: var(--color-acento);
+    margin: 0;
+    letter-spacing: 15px; 
+    text-shadow: 0 0 20px rgba(212, 175, 55, 0.8); 
+    text-transform: uppercase;
+}
+
+.lema-bienvenida {
+    font-size: clamp(1em, 2vw, 1.4em); 
+    color: var(--color-texto-claro);
+    margin: 15px 0 30px 0;
+    font-style: italic;
+}
+/* ---------------------------------- */
+/* 2. BOTONES DE LUJO */
+/* ---------------------------------- */
+
+.boton-lujo-hero, .boton-lujo-inline {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: transparent;
+    color: var(--color-acento); 
+    border: 2px solid var(--color-acento); 
+    border-radius: 8px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+    margin-top: 10px;
+    cursor: pointer;
+    border-color: var(--color-acento); 
+}
+
+.boton-lujo-hero:hover, .boton-lujo-inline:hover {
+    background-color: var(--color-acento); 
+    color: var(--color-texto-oscuro); 
+    box-shadow: 0 0 15px var(--color-acento); 
+    border-color: var(--color-acento); 
+}
+/*
+-----------------------
+ocupar esto cunado se quieren hacer contenedores en columna,
+recorar que debem,os de arreglar lo del texto cntrado 
+--
+*/
+.contenedorFlex2 {
+    display: flex;
+    flex-direction: row; /* esto hace que esten juntitos uwu */
+    gap: 2em;
+    margin: 3em 10%;
+    flex-wrap: wrap;
+}
+
+.contenedorFlex2 p{
+    color: var(--color-tarjeta);
+    font-size: 13px;
+}
+
+.contenedorFlex2 div {
+    padding: 1.5em;
+    background-color: var(--color-secundario);
+    border-radius: 7px;
+    flex: 1;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /*esto es lo del efecto glow*/
+}
+
+.subContenedor2 {
+    font-size: 2em;
+    color: var(--color-acento);
+    margin-bottom: .5em;
+    font-style: italic;
+    text-align: center;
+}
+/* Ordenamiento en flexbox */
+.objeto1-2 { order: 1; }
+.objeto2-2 { order: 2; }
+.objeto3-2 { order: 3; }
+
+/*
+Nota mental, revisar el videoo para hacer la mierda esa del destello 7w7
+https://www.youtube.com/watch?v=JCYo0r67koM
+*/
+.contenedorFlex2 div:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.8); /* brillo dorado */
+}
+
+/*
+--------------------------
+esto es lo mismo que el anterior pero en columna
+--------------------------
+*/
+.contenedorFlex1 {
+    display: flex;
+    flex-direction: column; /* uno debajo de otro */
+    gap: 2em;
+    margin: 3em 10%;
+}
+
+.contenedorFlex1 p{
+    color: var(--color-tarjeta);
+}
+
+.contenedorFlex1 div {
+    padding: 1.5em;
+    background-color: var(--color-secundario);
+    border-radius: 7px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.subContenedor1 {
+    font-size: 1.5em;
+    color: var(--color-acento);
+    margin-bottom: .5em;
+}
+
+/* esto es el ordernn del flexboox */
+.objeto1-1 { order: 1; }
+.objeto2-1 { order: 2; }
+.objeto3-1 { order: 3; }
+
+.contenedorFlex1 div:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.8); /* brillo dorado */
+}
+
+
+/*
+Contenedores pero con imagenes
+*/
+
+/* Contenedor general dividido en dos */
+.objeto-contenedor {
+    display: flex;
+    width: 100%;
+    height: 250px;           /* Ajusta a tu gusto */
+    background-color: var(--color-secundario);  
+    overflow: hidden;
+}
+
+/* Mitad izquierda (Imagen) */
+.objeto-img {
+    width: 50%;
+    height: 100%;
+}
+
+.objeto-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Mitad derecha (Texto + título) */
+.objeto-info {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;       /* Centra el h3 y el texto */
+    padding: 20px;
+    text-align: center;
+    
+}
+
+.objeto-info h3 {
+    margin: 0 0 10px 0;
+    font-size: 2rem;
+}
+
+.objeto-info p {
+    color: var(--color-tarjeta);
+    font-size: 13px;
+}
+
+#imagenEncabezado{
+    height: 340px;
+    width: 500px;
+}
+
+.lista li{
+    color: var(--color-texto-claro);
+    font-size: 12px;
+}
+
+#subtituloMenu {
+    font-size: 4.5rem;
+    background-color: #c9c9c9;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 600;
+    color: #c3a45a;
+    text-align: center;
+    margin: 40px 0 25px 0;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+/* esto es lo del separador*/
+#subtituloMenu::before,
+#subtituloMenu::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 32%;
+    height: 1px;
+    background: linear-gradient(to right, transparent, #c3a45a);
+}
+
+#subtituloMenu::before {
+    left: 0;
+}
+
+#subtituloMenu::after {
+    right: 0;
+    background: linear-gradient(to left, transparent, #c3a45a);
+}
+/*Aqui termina el separador*/
+
+
+/*
+Esto es el estilo de los horarios
+
+*/
+.contenedor-horarios {
+    width: 80%; /* Ajusta a tu gusto */
+    margin: 3em auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.tabla-horarios {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    font-size: 1.6rem;
+    background-color: #fff;
+}
+
+.tabla-horarios th,
+.tabla-horarios td {
+    
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+.tabla-horarios th {
+    background-color: #947a27;
+    color: #f5f5f5;
+    font-weight: bold;
+}
+
+.tabla-horarios tr:hover {
+    background-color: var(--color-acento);
+}
+
+.formulario{
+    color: var(--color-tarjeta);
+    font-size: 16px;
+}
+/*boton de agendar reservacion*/
+#botonAgendar{
+    color: var(--color-fondo-principal);
+    background-color: #947a27;
+    font-size: 16px;
+    font-weight: bold;
+    
+}
+
+
+/*esto es la leytra grande y blanca de la ubi*/
+#ubi{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/*se reutilizo el codigo de la tarea del carrusel para opiniones y secciones de la tienda*/
+.carrusel {
+    background-color: rgba(240, 248, 255, 0.161);
+    display: flex;
+    gap: 3em;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}
+
+.op {
+    border: 0.2em solid black;
+    box-shadow: 0.2em 0.2em 0.2em black;
+    padding: 0.2em;
+    flex: 0 0 300px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    scroll-snap-align: end;
+}
+
+.producto {
+    border: 0.2em solid black;
+    box-shadow: 0.2em 0.2em 0.2em black;
+    max-width: 20em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5em;
+}
+
+.producto img {
+    max-width: 100%;
+    height: 40%;
+    object-fit: cover;
+    box-shadow: 0.3em 0.3em 0.3em #d4af37;
+}
+
+/*preguntas y respuestas*/
+
+#qa{
+    color: var(--color-texto-claro);
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+/*terminos y condiciones en peque para representar q las esmpresas no quieren que lo leeas*/
+#qa{
+    color: var(--color-texto-claro);
+    font-size: 15px;
+    font-weight: italic;
+}
+
+/*
+------------
+
+Nota mental, de aqui hasta donde dice lo del footer copi, debes de copiarlo en tus paginas q te tocaron para que todo 
+tenga el mismo diseño, trata d averogiar como chingados hacer el efecto del brillo que vimos en tiktok
+
+------------
+*/
+.footer {
+    background-color: #111;
+    color: #e8e8e8;
+    padding: 45px 20px;
+    text-align: center;
+    margin-top: 50px;
+    border-top: 2px solid #c3a45a;
+}
+
+.footer h3 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 2rem;
+    color: #c3a45a;
+    margin-bottom: 10px;
+}
+
+.footer p {
+    font-size: 1rem;
+    margin: 8px 0;
+}
+
+/* recuerda utilizar el display flex para esto porfisss */
+.redes-sociales {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/*
+lucio, si queremos hacer elpie de pagina bien, ve este video porfisssss
+https://www.youtube.com/watch?v=sgDabqmtLUg
+*/
+.redes-sociales .icono {
+    font-size: 1.4rem;
+    color: #c3a45a;
+    background-color: #1a1a1a;
+    border: 1px solid #c3a45a;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: 0.3s ease;
+}
+
+/* esto es el efecto cuando pasas el cursor por los iconos, pero da error pork se invieren collores*/
+.redes-sociales .icono:hover {
+    transform: scale(1.15);
+    box-shadow: 0 0 12px #d4b56c;
+    background-color: #c3a45a;
+    color: #111;
+}
+
+.footer-copy {
+    font-size: 0.9rem;
+    color: #b1b1b1;
+    margin-top: 15px;
 }

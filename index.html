@@ -1,23 +1,734 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
-    <title>Document</title>
+    <title>MONZATI</title>
 </head>
-<body>
-<header id="encabezado">
-        <img src="images/img1.png" alt="logo_noticiero">
-        
+<body> <!--BORRAR: tengo q cambiar las class de esto para q se vea que no es de mi tarea-->
+    <header id="encabezado">
+        <img src="images/img1.png" alt="logoRestaurante">
         <nav id="navegacion">
             <a href="menu/menu.html">Menús</a>
-            <a href="#">Enlace 2</a>
-            <a href="#">Enlace 3</a>
+            <a href="promociones/index.html">Promociones</a>
+            <a href="galeria/index.html">Galería</a>
         </nav>
     </header>
     <main>
+        <br><br><br><br><br><br><br><br><br><br><br> <!--No borrar esto o la imagen del principio se va a la mie jijijij-->
+        
+        <!--Esto es la cagda de la imagen del principio-->
+        <section id="hero">
+        <div class="hero-contenido">
+            <h1 class="logo-principal">MONZATI</h1>
+            <p class="lema-bienvenida">
+                Cocina tradicional náhuatl elevada a la alta gastronomía.
+            </p>
+            <a href="#saltoReservacion" class="boton-lujo-hero"> <!-- nota mental: q te lleve a lo de la reservacion en el href -->
+                Agendar reservación
+            </a>
+        </div>
+    </section>
+    <h3 id="subtituloMenu">Acerca de nosotros</h3>
+    <!--Esto es nuestra presentación -->
+    <div class="contenedorFlex2">
+        <div class="objeto1-2">
+            <h3 class="subContenedor2">¿Quiénes somos?</h3>
+            <p>
+                En MONZATI celebramos la gastronomía tradicional náhuatl mediante recetas
+                auténticas aprendidas directamente de comunidades originarias.
+                <br>
+                <br>
+                Somos un espacio donde la herencia culinaria, los ingredientes nativos y las técnicas
+                ancestrales se transforman en una experiencia de alta cocina.
+                <br>
+                <br>
+                Nuestro propósito es preservar la cultura nahua y compartir su esencia a través de sabores que honran
+                nuestras raíces y fortalecen el vínculo con quienes mantienen viva esta tradición.
+                <br>
+                <br>
+                Contamos con las siguientes características:
+                <ul class="lista">
+                    <li>Espacio 100% libre de humo de tabaco</li>
+                    <li>Espacio 100% Pet Friendly</li>
+                    <li>Espacio para botar a los chamacos</li>
+                    <li>Menú vegano, crudivegano y vegetariano</li>
+                    <li>Parking gratis</li>
+                    <li>Somos inclusivos y queremos a los jochis❤️🏳️‍🌈</li>
+                </ul>
+            </p>
+        </div>
+        <div class="objeto1-2">
+            <img id="imagenEncabezado" src="images/abajoEncabezado.webp" alt="imagenPromo" srcset="">
+        </div>
+    </div>
+    <!--holi-->
+   
+    <!--Aqui va lo del la mision y v-->
+    <div class="contenedorFlex2">
+        <div class="objeto1-2">
+            <h3 class="subContenedor2">Misión</h3>
+            <p>
+                Rescatamos, preservamos y celebramos la gastronomía tradicional
+                náhuatl mediante recetas auténticas transmitidas por generaciones en comunidades
+                originarias. Nuestro compromiso es ofrecer una experiencia culinaria de lujo
+                que honre la historia, el sabor y la cosmovisión de los pueblos nahuas, brindando
+                a cada visitante un espacio donde la tradición se une con la excelencia
+                gastronómica y el respeto por nuestras raíces.
+            </p>
+        </div>
+
+                <div class="objeto1-2">
+            <h3 class="subContenedor2">Visión</h3>
+            <p>
+                Convertirnos en el restaurante referente en México y el mundo en comida tradicional
+                náhuatl de alta cocina, impulsando la valoración cultural, el desarrollo de
+                comunidades originarias y la innovación gastronómica basada en ingredientes y técnicas
+                ancestrales. Aspiramos a que MONZATI sea un embajador de la cultura nahua, inspirando
+                orgullo, preservación y reconocimiento internacional.
+            </p>
+        </div>
+    </div>
+
+    <div class="contenedorFlex2">
+        <div class="objeto1-2">
+            <h3 class="subContenedor2">Ubicación</h3>
+            <p id="ubi">
+                Cda. 20 de Agosto 21, San Francisco Culhuacan de la Magdalena, Coyoacán, 04260 Ciudad de México, CDMX
+            </p>
+        </div>
+
+        <div class="objeto1-2"> <!--Esto es la ubicacion del maps-->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d240896.5119783365!2d-99.30404663085938!3d19.36880629070401!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff007af9681f%3A0xb80750878f32df28!2sMonzati%20Studio!5e0!3m2!1ses!2smx!4v1765174987111!5m2!1ses!2smx" width="800" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+    <br id="saltoReservacion">
+    <h3 id="subtituloMenu">Reservación</h3>
+    
+    <!--
+    aqui empieza lo de la descripcion del restauratnte
+    -->
+     <div class="contenedorFlex2">
+        <div class="formulario">
+        <div class="objeto1-2">
+            <!--cortar aqui-->
+            <fieldset>
+                <!--titulo del contenedor-->
+                <legend><h3 class="subContenedor2">Agendar Reservación</h3></legend>
+                <!--esto es el no,bre del usuario-->
+                <label for="username">Nombre del reservante:</label> <!--for indica que se espera que se l-->
+                <input type="text" id="username" name="username" placeholder="Nombre Completo" required>
+                <br>
+                <!--num del usuario-->
+                <label for="username">Número telefónico:</label> <!--for indica que se espera que se l-->
+                <input type="text" id="username" name="username" placeholder="Número de 10 dígitos" required>
+                <br>
+                <!--correo-->
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="@ del reservante" required>
+                <br>
+                <!--dia de la reservacion-->
+                <label for="Fecha de reservación">Fecha de reservación:</label>
+                <input type="date" id="fecha de nacimiento" name="fecha de reservacion" required>
+                <br>
+                <!--hora de la reservacion-->
+                <label for="bebidas">Hora de la reservación:</label>
+                    <select name="hora" id="hora">
+                        <option>12:00 hrs</option>
+                        <option>13:00 hrs</option>
+                        <option>14:00 hrs</option>
+                        <option>15:00 hrs</option>
+                        <option>16:00 hrs</option>
+                        <option>17:00 hrs</option>
+                        <option>18:00 hrs</option>
+                        <option>19:00 hrs</option>
+                        <option>20:00 hrs</option>
+                        <option>21:00 hrs</option>
+                        <option>22:00 hrs</option>
+                    </select>
+                    <br>
+                    <!--cantidad de personas-->
+                    <label for="bebidas">Cantidad de personas:</label>
+                    <select name="personas" id="personas">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                    </select>
+                    <br>
+                    <!--discapacidad-->
+                    <label for="bebidas">¿Alguna persona con discapacidad?:</label>
+                    <select name="personas" id="personas">
+                        <option>No</option>
+                        <option>Silla de ruedas o movilidad reducida</option>
+                        <option>Dificultad para estar de pie o caminar largas distancias</option>
+                        <option>Persona de talla baja o enanismo</option>
+                        <option>Discapacidad visual o baja visión</option>
+                        <option>Discapacidad auditiva o sordera</option>
+                        <option>Sensibilidades sensoriales (luz, sonido)</option>
+                        <option>Alergias o intolerancias alimentarias graves</option>
+                        <option>Persona usuaria de perro guía o de asistencia</option>
+                        <option>Dificultades del habla o comunicación</option>
+                    </select>
+                    <br>
+                    <!--tipo de mesa-->
+                    <label for="bebidas">Tipo de mesa:</label>
+                    <select name="personas" id="personas">
+                        <option>Interior</option>
+                        <option>Terraza</option>
+                        <option>Área privada</option>
+                    </select>
+                    <br>
+                    <!--motivo visita-->
+                    <label for="bebidas">Motivo de la visita:</label>
+                    <select name="personas" id="personas">
+                        <option>Celebración</option>
+                        <option>Cena familiar</option>
+                        <option>Cena romántica</option>
+                        <option>Viajeros/turistas</option>
+                    </select>
+                    <br>
+                    <!--motivo visita-->
+                    <label for="bebidas">¿Le gustaría recibir una bienvenida en náhuatl?:</label>
+                    <select name="personas" id="personas">
+                        <option>No</option>
+                        <option>Sí</option>
+                    </select>
+                    <br><br>
+                    <hr>
+                    <!--casilla-->
+                    <input type="checkbox" id="miCasilla" name="opcion" value="aceptar" required>
+                    <label for="miCasilla">He leído y acepto los términos y condiciones</label>
+                    <br>
+                    <!--tolerancia-->
+                    <p>El tiempo de tolerancia de la reservación es de 10 minutos</p>
+                    <!--button-->
+                    <button id="botonAgendar">Agendar reservación</button>
+                </form>
+        </fieldset>
+        </div>
+        </div>
+        <div class="objeto1-2">
+            
+        <div class="contenedor-horarios">
+            <h3 class="subContenedor2">HORARIOS</h3>
+            <table class="tabla-horarios">
+                <tr>
+                    <th>Día</th>
+                    <th>Apertura</th>
+                    <th>Cierre</th>
+                </tr>
+                <tr>
+                    <td>Lunes</td>
+                    <td>12:00 pm</td>
+                    <td>10:00 pm</td>
+                </tr>
+                <tr>
+                    <td>Martes</td>
+                    <td>12:00 pm</td>
+                    <td>10:00 pm</td>
+                </tr>
+                <tr>
+                    <td>Miércoles</td>
+                    <td>12:00 pm</td>
+                    <td>10:00 pm</td>
+                </tr>
+                <tr>
+                    <td>Jueves</td>
+                    <td>12:00 pm</td>
+                    <td>10:00 pm</td>
+                </tr>
+                <tr>
+                    <td>Viernes</td>
+                    <td>12:00 pm</td>
+                    <td>11:00 pm</td>
+                </tr>
+                <tr>
+                    <td>Sábado</td>
+                    <td>12:00 pm</td>
+                    <td>11:00 pm</td>
+                </tr>
+                <tr>
+                    <td>Domingo</td>
+                    <td>12:00 pm</td>
+                    <td>9:00 pm</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    </div>
+<!--Eventos-->
+    <h3 id="subtituloMenu">Próximos Eventos</h3>
+    
+    <section class="carrusel">
+        <article class="op">
+            <h4>Noche de Sabores Ancestrales</h4>
+            <p>15 de enero, 2025</p>
+            <img class="producto" src="images/evento1.jpg" alt="evento1">
+            <p>Una degustación guiada con platillos náhuatl tradicionales, explicando su origen y significado cultural.</p>
+        </article>
+
+        <article class="op">
+            <h4>Cena Ritual del Fuego</h4>
+            <p>22 de febrero, 2025</p>
+            <img class="producto" src="images/evento2.jpg" alt="evento2">
+            <p>Experiencia culinaria inspirada en ceremonias antiguas con ingredientes ahumados y técnicas prehispánicas.</p>
+        </article>
+
+        <article class="op">
+            <h4>Festival del Maíz Sagrado</h4>
+            <p>5 de marzo, 2025</p>
+            <img class="producto" src="images/evento3.jpeg" alt="evento3">
+            <p>Un recorrido de platillos basados en diferentes variedades de maíz nativo y bebidas tradicionales.</p>
+        </article>
+
+        <article class="op">
+            <h4>Noches de Copal y Cacao</h4>
+            <p>29 de marzo, 2025</p>
+            <img class="producto" src="images/evento4.jpg" alt="evento4">
+            <p>Maridaje de cacao originario con licores y recetas ancestrales aromatizadas con copal.</p>
+        </article>
+
+        <article class="op">
+            <h4>Danza y Gastronomía Nahuatl</h4>
+            <p>12 de abril, 2025</p>
+            <img class="producto" src="images/evento5.jpg" alt="evento5">
+            <p>Presentación cultural con danza tradicional combinada con una cena especial llena de simbolismos.</p>
+        </article>
+
+        <article class="op">
+            <h4>Tarde de Medicina Tradicional</h4>
+            <p>26 de abril, 2025</p>
+            <img class="producto" src="images/evento6.jpeg" alt="evento6">
+            <p>Charla y degustaciones basadas en hierbas medicinales usadas por comunidades nahuas.</p>
+        </article>
+
+        <article class="op">
+            <h4>Banquete del Equinoccio</h4>
+            <p>21 de marzo, 2025</p>
+            <img class="producto" src="images/evento7.jpg" alt="evento7">
+            <p>Cena especial para recibir el equinoccio con recetas energéticas y ceremonias simbólicas.</p>
+        </article>
+
+        <article class="op">
+            <h4>Noche del Maguey y el Pulque</h4>
+            <p>10 de mayo, 2025</p>
+            <img class="producto" src="images/evento8.jpg" alt="evento8">
+            <p>Maridaje con pulque y mezcales artesanales acompañados de platillos de maguey.</p>
+        </article>
+
+        <article class="op">
+            <h4>Cena Prehispánica de Caza y Recolección</h4>
+            <p>24 de mayo, 2025</p>
+            <img class="producto" src="images/evento9.jpg" alt="evento9">
+            <p>Interpretación moderna de técnicas antiguas de caza y recolección con sabores intensos y puros.</p>
+        </article>
+
+        <article class="op">
+            <h4>Sabores del Templo Mayor</h4>
+            <p>14 de junio, 2025</p>
+            <img class="producto" src="images/evento10.jpg" alt="evento10">
+            <p>Cena temática inspirada en ingredientes usados en antiguos banquetes mexicas.</p>
+        </article>
+    </section>
+
+<!--secciones del resturante-->
+    <h3 id="subtituloMenu">Secciones del Restaurante</h3>
+    <section class="carrusel">
+
+        <article class="op">
+            <h4>Salón Principal</h4>
+            <p>Planta baja</p>
+            <img class="producto" src="images/seccion1.png" alt="seccion1">
+            <p>El corazón del restaurante, con decoración inspirada en iconografía náhuatl y mesas amplias para familias y grupos.</p>
+        </article>
+
+        <article class="op">
+            <h4>Terraza Xochitl</h4>
+            <p>Segundo nivel, área exterior</p>
+            <img class="producto" src="images/seccion2.png" alt="seccion2">
+            <p>Espacio abierto rodeado de plantas nativas, ideal para cenas al aire libre con iluminación cálida.</p>
+        </article>
+
+        <article class="op">
+            <h4>Zona del Maguey</h4>
+            <p>Lado derecho del salón</p>
+            <img class="producto" src="images/seccion3.png" alt="seccion3">
+            <p>Área decorada con magueyes artesanales, perfecta para degustar pulque y mezcal prehispánico.</p>
+        </article>
+
+        <article class="op">
+            <h4>Bar del Cacao</h4>
+            <p>Frente al acceso principal</p>
+            <img class="producto" src="images/seccion4.png" alt="seccion4">
+            <p>Bar temático especializado en bebidas tradicionales de cacao, atoles y coctelería con ingredientes originarios.</p>
+        </article>
+
+        <article class="op">
+            <h4>Cava Ancestral</h4>
+            <p>Sótano</p>
+            <img class="producto" src="images/seccion5.png" alt="seccion5">
+            <p>Espacio privado para catas de mezcal, pulque y fermentos tradicionales, ambientado con elementos ceremoniales.</p>
+        </article>
+
+        <article class="op">
+            <h4>Área de Fogones</h4>
+            <p>Junto a la cocina principal</p>
+            <img class="producto" src="images/seccion6.png" alt="seccion6">
+            <p>Zonas donde se preparan platillos con técnicas ancestrales como barro, piedra volcánica y comal.</p>
+        </article>
+
+        <article class="op">
+            <h4>Salón Privado Quetzal</h4>
+            <p>Segundo piso, sección norte</p>
+            <img class="producto" src="images/seccion7.png" alt="seccion7">
+            <p>Espacio exclusivo para eventos privados y cenas importantes, con arte inspirado en Quetzalcóatl.</p>
+        </article>
+
+        <article class="op">
+            <h4>Jardín de Hierbas</h4>
+            <p>Patio interior</p>
+            <img class="producto" src="images/seccion8.png" alt="seccion8">
+            <p>Pequeño jardín donde se cultivan hierbas medicinales y aromáticas utilizadas en los platillos.</p>
+        </article>
+
+        <article class="op">
+            <h4>Zona Infantil Calmécac</h4>
+            <p>Cerca de la entrada trasera</p>
+            <img class="producto" src="images/seccion9.png" alt="seccion9">
+            <p>Área temática para niños con actividades culturales, cuentos e ilustraciones de la tradición nahua.</p>
+        </article>
+
+        <article class="op">
+            <h4>Pasillo Ceremonial</h4>
+            <p>Entre el salón principal y la terraza</p>
+            <img class="producto" src="images/seccion10.png" alt="seccion10">
+            <p>Camino decorado con símbolos nahuas y esculturas, creando una transición visual hacia la zona exterior.</p>
+        </article>
+    </section>
+
+<!--reseñas-->
+    <h3 id="subtituloMenu">Reseñas de Clientes</h3>
+    <section class="carrusel">
+        <article class="op">
+            <h4>María López</h4>
+            <p>⭐⭐⭐⭐⭐</p>
+            <p>Una experiencia increíble. Los sabores realmente honran la cocina tradicional, regresaré sin duda.</p>
+        </article>
+
+        <article class="op">
+            <h4>Carlos Hernández</h4>
+            <p>⭐⭐⭐⭐</p>
+            <p>La comida deliciosa y el ambiente precioso. Solo tardaron un poco en servir, pero valió la pena.</p>
+        </article>
+
+        <article class="op">
+            <h4>Fernanda Ruiz</h4>
+            <p>⭐⭐⭐⭐⭐</p>
+            <p>El mejor restaurante de comida náhuatl que he probado. Todo se siente auténtico y de excelente calidad.</p>
+        </article>
+
+        <article class="op">
+            <h4>Jorge Martínez</h4>
+            <p>⭐⭐⭐</p>
+            <p>Buen sabor y concepto, aunque esperaba porciones un poco más grandes. Aún así lo recomiendo.</p>
+        </article>
+
+        <article class="op">
+            <h4>Andrea Gómez</h4>
+            <p>⭐⭐⭐⭐⭐</p>
+            <p>El servicio impecable y cada platillo cuenta una historia. Una joya culinaria.</p>
+        </article>
+
+        <article class="op">
+            <h4>Daniel Ortega</h4>
+            <p>⭐⭐⭐⭐</p>
+            <p>El ambiente es hermoso y la comida muy buena. Me encantó la decoración inspirada en símbolos nahuas.</p>
+        </article>
+
+        <article class="op">
+            <h4>Valeria Soto</h4>
+            <p>⭐⭐⭐⭐⭐</p>
+            <p>¡Exquisito! Los sabores ancestrales mezclados con técnica moderna son un espectáculo.</p>
+        </article>
+
+        <article class="op">
+            <h4>Sebastián Muñoz</h4>
+            <p>⭐⭐⭐</p>
+            <p>La atención fue buena, aunque el platillo que pedí estaba un poco salado. Volveré para probar más opciones.</p>
+        </article>
+
+        <article class="op">
+            <h4>Jimena Arce</h4>
+            <p>⭐⭐⭐⭐</p>
+            <p>Me encantó el maíz en todas sus preparaciones. Se nota el respeto por la tradición.</p>
+        </article>
+
+        <article class="op">
+            <h4>Leonardo Pérez</h4>
+            <p>⭐⭐⭐⭐⭐</p>
+            <p>Un lugar mágico. La terraza es perfecta para una cena especial.</p>
+        </article>
+
+        <article class="op">
+            <h4>Paola Rivas</h4>
+            <p>⭐⭐⭐⭐</p>
+            <p>Platillos deliciosos y originales. El pulque fue lo mejor de la noche.</p>
+        </article>
+
+        <article class="op">
+            <h4>Ángel Cabrera</h4>
+            <p>⭐⭐⭐⭐⭐</p>
+            <p>Sin duda una de las mejores experiencias gastronómicas que he tenido. Todo impecable.</p>
+        </article>
+
+        <article class="op">
+            <h4>Mónica Sánchez</h4>
+            <p>⭐⭐⭐</p>
+            <p>Me gustó mucho la comida, aunque el lugar estaba un poco lleno. Aun así, buena experiencia.</p>
+        </article>
+
+        <article class="op">
+            <h4>Eduardo Torres</h4>
+            <p>⭐⭐⭐⭐⭐</p>
+            <p>Los sabores tradicionales con un toque de lujo. Perfecto para celebraciones.</p>
+        </article>
+
+        <article class="op">
+            <h4>Camila Vega</h4>
+            <p>⭐⭐⭐⭐</p>
+            <p>Muy buena atención del personal y el ambiente cultural es precioso.</p>
+        </article>
+
+        <article class="op">
+            <h4>Roberto Aguilar</h4>
+            <p>⭐⭐⭐⭐⭐</p>
+            <p>Increíble experiencia sensorial. La historia detrás de cada platillo te transporta.</p>
+        </article>
+
+        <article class="op">
+            <h4>Ximena Navarro</h4>
+            <p>⭐⭐⭐</p>
+            <p>El lugar es muy bonito y la comida rica, pero creo que podrían ampliar el menú.</p>
+        </article>
+
+        <article class="op">
+            <h4>Héctor Ramírez</h4>
+            <p>⭐⭐⭐⭐⭐</p>
+            <p>De mis restaurantes favoritos. La esencia náhuatl está presente en cada detalle.</p>
+        </article>
+
+        <article class="op">
+            <h4>Natalia Flores</h4>
+            <p>⭐⭐⭐⭐</p>
+            <p>Excelente ambiente y sabores únicos. El postre de cacao estuvo espectacular.</p>
+        </article>
+
+        <article class="op">
+            <h4>Iván Calderón</h4>
+            <p>⭐⭐⭐⭐⭐</p>
+            <p>Todo perfecto. Desde la comida hasta la atención y la decoración. Muy recomendable.</p>
+        </article>
+
+
+    </section>
+
+
+<!--preguntas y respuestas-->
+    <h3 id="subtituloMenu">Q&A Frecuentes</h3>
+    <div class="contenedorFlex1">
+        <div class="objeto1-1">
+            <h3 class="subContenedor2">No te quedes con la duda!</h3>
+            
+            <p id="qa">
+              1°¿Qué tipo de comida ofrece MONZATI? <br>
+            MONZATI ofrece gastronomía tradicional náhuatl preparada con ingredientes nativos y técnicas ancestrales.<br><br>
+
+            2°¿Es necesario reservar?<br>
+            No es obligatorio, pero sí recomendable, especialmente en fines de semana y eventos especiales.<br><br>
+
+            3°¿Tienen opciones vegetarianas o veganas?<br>
+            Sí, contamos con platillos basados en maíz, quelites, hongos y otros ingredientes de origen vegetal.<br><br>
+
+            4°¿Tienen menú para niños?<br>
+            Sí, ofrecemos opciones suaves y adaptadas para el paladar infantil.<br><br>
+
+            5°¿Qué métodos de pago aceptan?<br>
+            Aceptamos tarjetas, efectivo y pagos digitales.<br><br>
+
+            6°¿Hay estacionamiento disponible?<br>
+            Sí, contamos con estacionamiento propio y servicio de valet.<br><br>
+
+            7°¿El restaurante es pet friendly?<br>
+            Solo en la terraza exterior. Dentro del salón principal no se permiten mascotas.<br><br>
+
+            8°¿Ofrecen servicio para eventos privados?<br>
+            Sí, contamos con un salón especial para eventos, además de opciones personalizadas de menú.<br><br>
+
+            9°¿Los platillos son picantes?<br>
+            Algunos sí, pero todos pueden ajustarse al gusto del cliente.<br><br>
+
+            10°¿De dónde provienen sus ingredientes?<br>
+            Trabajamos con productores locales y comunidades originarias que cultivan ingredientes tradicionales.<br><br>
+
+            11°¿Tienen entrega a domicilio?<br>
+            Sí, disponible a través de plataformas seleccionadas y pedidos directos.<br><br>
+
+            12°¿Es posible solicitar platillos sin ciertos ingredientes por alergias?<br>
+            Claro, adaptamos los platillos en la medida posible para cuidar tu salud.<br><br>
+
+            13°¿Ofrecen bebidas tradicionales?<br>
+            Sí, contamos con pulque, atoles, infusiones prehispánicas y mezcales artesanales.<br><br>
+
+            14°¿El menú cambia por temporada?<br>
+            Sí, algunos platillos dependen de ingredientes de temporada para garantizar frescura.<br><br>
+
+            15°¿Puedo llevar pastel si celebro un cumpleaños?<br>
+            Sí, con un pequeño cargo por servicio.<br><br>
+
+            16°¿Tienen área al aire libre?<br>
+            Sí, nuestra Terraza Xochitl está disponible para reservas y mesas libres.<br><br>
+
+            17°¿Cuánto dura en promedio la espera sin reserva?<br>
+            Entre 10 y 25 minutos dependiendo del día y horario.<br><br>
+
+            18°¿Puedo tomar fotografías dentro del restaurante?<br>
+            Sí, siempre que no afecten la experiencia de otros comensales.<br><br>
+
+            19°¿Tienen menú degustación?<br>
+            Sí, contamos con un menú degustación basado en ingredientes ancestrales.<br><br>
+
+            20°¿Ofrecen experiencias culturales o talleres?<br>
+            Sí, ocasionalmente realizamos eventos culturales, demostraciones y catas temáticas.
+            </p>
+        </div>
+    </div>
+    
+    <!--preguntas y respuestas-->
+    <h3 id="subtituloMenu">Términos y Condiciones</h3>
+    <div class="contenedorFlex1">
+        <div class="objeto1-1">
+            <h3 class="subContenedor1">1. Responsabilidad del Cliente</h3>
+            <p id="tc">El cliente es responsable de proporcionar información correcta al realizar reservas o pedidos.</p>
+
+            <h3 class="subContenedor1">2. Horarios de Servicio</h3>
+            <p id="tc">Los horarios del restaurante pueden cambiar sin previo aviso según disponibilidad operativa.</p>
+
+            <h3 class="subContenedor1">3. Reservaciones</h3>
+            <p id="tc">Las reservaciones deben confirmarse con anticipación y pueden requerir un anticipo dependiendo del evento.</p>
+
+            <h3 class="subContenedor1">4. Cancelaciones</h3>
+            <p id="tc">Las cancelaciones deben realizarse al menos 24 horas antes para evitar cargos.</p>
+
+            <h3 class="subContenedor1">5. Política de No-Show</h3>
+            <p id="tc">Si el cliente no se presenta a su reservación, el restaurante podrá liberar la mesa y aplicar un cargo si corresponde.</p>
+
+            <h3 class="subContenedor1">6. Modificaciones de Reservación</h3>
+            <p id="tc">Cualquier cambio en la reservación depende de disponibilidad y debe solicitarse con anticipación.</p>
+
+            <h3 class="subContenedor1">7. Consumo Mínimo</h3>
+            <p id="tc">Algunas áreas del restaurante pueden requerir un consumo mínimo establecido.</p>
+
+            <h3 class="subContenedor1">8. Ingreso de Alimentos Externos</h3>
+            <p id="tc">No se permite el ingreso de alimentos o bebidas externas, excepto por acuerdos especiales.</p>
+
+            <h3 class="subContenedor1">9. Pasteles Externos</h3>
+            <p id="tc">El ingreso de pasteles para celebraciones genera un cargo por servicio.</p>
+
+            <h3 class="subContenedor1">10. Alergias y Restricciones</h3>
+            <p id="tc">El cliente debe informar sobre alergias alimentarias; el restaurante no se hace responsable si no se comunica previamente.</p>
+
+            <h3 class="subContenedor1">11. Métodos de Pago</h3>
+            <p id="tc">Aceptamos tarjetas, efectivo y pagos digitales; algunos métodos pueden no estar disponibles temporalmente.</p>
+
+            <h3 class="subContenedor1">12. Precios</h3>
+            <p id="tc">Los precios del menú pueden cambiar sin previo aviso según disponibilidad de ingredientes.</p>
+
+            <h3 class="subContenedor1">13. Propinas</h3>
+            <p id="tc">Las propinas no están incluidas y son completamente voluntarias.</p>
+
+            <h3 class="subContenedor1">14. Seguridad del Cliente</h3>
+            <p id="tc">El restaurante no se hace responsable por pérdidas de objetos personales dentro del establecimiento.</p>
+
+            <h3 class="subContenedor1">15. Comportamiento Adecuado</h3>
+            <p id="tc">Se pide a los clientes mantener un comportamiento respetuoso hacia el personal y otros comensales.</p>
+
+            <h3 class="subContenedor1">16. Menores de Edad</h3>
+            <p id="tc">Los menores deben estar acompañados por un adulto en todo momento.</p>
+
+            <h3 class="subContenedor1">17. Mascotas</h3>
+            <p id="tc">Solo se permiten mascotas en áreas designadas como la terraza.</p>
+
+            <h3 class="subContenedor1">18. Estacionamiento</h3>
+            <p id="tc">El uso del estacionamiento es bajo responsabilidad del cliente; el restaurante no se hace responsable por daños o robos.</p>
+
+            <h3 class="subContenedor1">19. Servicio de Valet</h3>
+            <p id="tc">El servicio de valet es operado por terceros; MONZATI no se responsabiliza por incidentes.</p>
+
+            <h3 class="subContenedor1">20. Fotografías y Grabaciones</h3>
+            <p id="tc">Se permite tomar fotos mientras no se afecte la experiencia de otros clientes.</p>
+
+            <h3 class="subContenedor1">21. Eventos Especiales</h3>
+            <p id="tc">Los precios y condiciones de eventos especiales pueden diferir del servicio regular.</p>
+
+            <h3 class="subContenedor1">22. Daños a Propiedad</h3>
+            <p id="tc">El cliente deberá cubrir costos por daños ocasionados a mobiliario o equipo del restaurante.</p>
+
+            <h3 class="subContenedor1">23. Bebidas Alcohólicas</h3>
+            <p id="tc">El consumo de alcohol solo está permitido para mayores de 18 años con identificación válida.</p>
+
+            <h3 class="subContenedor1">24. Conducta Bajo Influencia</h3>
+            <p id="tc">Nos reservamos el derecho de negar servicio a clientes bajo evidente estado de ebriedad.</p>
+
+            <h3 class="subContenedor1">25. Entrega a Domicilio</h3>
+            <p id="tc">Los tiempos de entrega pueden variar según la zona y disponibilidad.</p>
+
+            <h3 class="subContenedor1">26. Garantía de Satisfacción</h3>
+            <p id="tc">Si un platillo no cumple con las expectativas, el cliente debe mencionarlo durante su visita para ofrecer solución.</p>
+
+            <h3 class="subContenedor1">27. Menú de Temporada</h3>
+            <p id="tc">Algunos platillos solo se ofrecen por temporadas debido a la disponibilidad de ingredientes tradicionales.</p>
+
+            <h3 class="subContenedor1">28. Disponibilidad de Ingredientes</h3>
+            <p id="tc">En caso de escasez de productos, el restaurante podrá sustituir ingredientes manteniendo la calidad.</p>
+
+            <h3 class="subContenedor1">29. Uso de Instalaciones</h3>
+            <p id="tc">Las instalaciones deben usarse de manera adecuada, respetando señalizaciones y áreas restringidas.</p>
+
+            <h3 class="subContenedor1">30. Actualización de Términos</h3>
+            <p id="tc">Los términos y condiciones pueden actualizarse sin previo aviso; la versión vigente siempre será la publicada.</p>
+
+        </div>
+    </div>
     </main>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<!--finalmente el footer aaaaaaaaaaaaaaaaaaaaaaaaaaaaa lloro de emoción-->
+    <footer class="footer">
+    <div class="footer-contenido">
+        <h3>MONZATI</h3>
+        <p>Cocina tradicional náhuatl elevada a la alta gastronomía.</p>
+        <p><strong>Equipo 1:</strong><br> Olmedo Sámano Emiliano Isacar <br> Alvarado Luna Luciano</p>
+        <p><strong>Programación Web 1:</strong> Proyecto Final</p>
+        <p><strong>Universidad Nacional Áutonoma de México (UNAM)</strong><br> Facultad de Estudios Superiores "Aragón"</p>
+        <!--cambiar los enlaces, el goyo es para que no se me olvide cambiarlos xd-->
+        <div class="redes-sociales">
+            <a href="https://www.youtube.com/watch?v=_FX0dTdZKLo" class="icono"><i></i>IG</a>
+            <a href="https://www.youtube.com/watch?v=_FX0dTdZKLo" class="icono"><i></i>FB</a>
+            <a href="https://www.youtube.com/watch?v=_FX0dTdZKLo" class="icono"><i></i>WP</a>
+            <a href="https://www.youtube.com/watch?v=_FX0dTdZKLo" class="icono"><i></i>@</a>
+        </div>
+        
+        <p class="footer-copy">© 2025 MONZATI — Todos los derechos reservados. <br>Contenido bajo licencia Creative Commons CC BY-NC-ND.</p>
+    </div>
+    </footer>
+
 </body>
+
 </html>
