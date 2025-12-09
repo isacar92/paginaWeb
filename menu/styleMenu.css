@@ -87,7 +87,8 @@ este es el otro cuadrito ijijijijijijijiji
 }
 
 
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap'); /*no c porque daba problemas en el html, pss lo pongo aqui*/
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap');
+ /*no c porque daba problemas en el html, pss lo pongo aqui*/
 
 #titulo {
     /*poner titulo de otro color q no sea dorado, c ve horrible*/
@@ -264,21 +265,23 @@ h1 {
     opacity: 0.7;
 }
 
-/*Espero q funcione por el amor de dios*/
+/*Espero q funcione por el amor de dios
+es lo q hace el cuadrito del video de tijtok, revisar bien la doc del w de youtube que guarde
+*/
 .seccion_productos .producto {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border-radius: 10px; /* opcional: para que el glow se vea más bonito */
+    border-radius: 10px;
 }
 
 .seccion_productos .producto:hover {
-    transform: scale(1.05); /* Expansión suave */
-    box-shadow: 0 0 20px rgba(255, 215, 0, 0.6); /* Iluminación dorada */
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.6); /* esto es l ailuminacion*/
     cursor: pointer;
 }
 
 .btn-carrito {
     padding: 10px 18px;
-    background-color: #111; /* color base elegante */
+    background-color: #111; /* color base */
     color: white;
     border: none;
     border-radius: 8px;
@@ -292,7 +295,8 @@ h1 {
     animation: brilloDorado 1.6s infinite alternate ease-in-out;
 }
 
-/* amorcito, te dejo el link que vi para hacer el efecto del brillo https://www.youtube.com/watch?v=MCKhMwbIrdM */
+/* amorcito, te dejo el link que vi para hacer el efecto del brillo
+https://www.youtube.com/watch?v=MCKhMwbIrdM */
 
 
 

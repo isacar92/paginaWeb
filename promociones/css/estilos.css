@@ -1,6 +1,5 @@
-/*Esto es la hoja de estilos*/
 html {
-    font-size: 62.5%;
+    font-size: 62.5%; /*agregar cosas basicas no olvidar*/
 }
 
 body {
@@ -78,7 +77,7 @@ h1 {
     text-align: center;
 }
 
-
+/*no cambiar e integrar las asignaciones de color en la documentacion*/
 :root {
     --color-principal: #eeeeee;
     --color-acento: rgb(184, 134, 11);
@@ -87,7 +86,7 @@ h1 {
     --color-borde-alerta: #413702;
 }
 
-/* Base de la página */
+
 body {
     font-family: 'Inter' sans-serifsss;
     background-color: var(--color-principal);
@@ -122,7 +121,6 @@ h3 {
 }
 
 
-/* Usaremos el nombre de clase corregido: .promociones-grid */
 .promociones-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -158,13 +156,13 @@ h3 {
 }
 
 
-/* Usaremos el nombre de clase corregido: .promo-cuerpo */
+
 .promo-cuerpo {
     flex-grow: 1;
     margin-bottom: 20px;
 }
 
-/* Estilo para la imagen placeholder */
+/* Estilo para la imagen placeholder, recordar cambiar */
 .promo-cuerpo img {
     width: 100%;
     height: auto;
@@ -191,7 +189,6 @@ h3 {
 
 .promo-lista li::before {
     content: "✦";
-    /* Agregamos un ícono sutil */
     color: var(--color-acento);
     font-size: 0.8em;
     position: absolute;
@@ -199,10 +196,6 @@ h3 {
     top: 0;
 }
 
-
-
-
-/* Usaremos el nombre de clase: boton-de-lujo */
 .boton-de-lujo {
     display: block;
     width: 100%;
@@ -224,6 +217,8 @@ h3 {
     transform: translateY(-2px);
 }
 
+
+/*reutilizar la cosa del grid de la tarea 18 pls*/
 .noticias {
     border: 0.1em solid rgb(0, 0, 0);
     grid-column: 1 / 5;

@@ -1,5 +1,5 @@
 html {
-    font-size: 62.5%;
+    font-size: 62.5%; /*agregar los elementos esenciales NO OLIVIDAR*/
 }
 
 body {
@@ -78,39 +78,40 @@ un copy paste hasta el otro cuadrito ijijijijijijijiji
 este es el otro cuadrito ijijijijijijijiji
 ----------------------------------
 */
+
+/*ESTO ES lo del banner, nota mental ver el video donde explica la cosa wuwuwuw
+https://www.youtube.com/watch?v=L5_R_sl8VH0
+*/
 #hero {
-    /* El Hero solo maneja el fondo y tiene la altura de la pantalla */
+    /* fin del min 8 dnd solo maneja el fondo y tiene la altura de la pantalla */
     height: 81.1vh;
     width: 100%;
     margin-top: 0; 
     
-    /* Configuración de Flexbox para centrar el contenido */
+    /* esto es lo de la config del fflexbox para centrar el contenido */
     display: flex;
     justify-content: center;
     align-items: center;
     
-    /* RECUERDA: AJUSTA ESTA URL CON LA RUTA REAL DE TU IMAGEN */
+    /* aqui debemos de pegar una imagen del resyaaurante, preocura q sea como un patron o algo */
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), 
-                url('../images/fondo1.jpg'); /* <<-- ¡AJUSTA AQUÍ! */
+                url('../images/fondo1.jpg');
     
     background-repeat: no-repeat; 
     background-position: center; 
     background-size: cover; 
     
-    /* ESTO HACE QUE SOLO EL FONDO SEA ESTÁTICO (PARALLAX) */
+    /* eso hace q el fondo como q se congele*/
     background-attachment: fixed; 
 }
 
-.hero-contenido {
-    /* CORRECCIÓN: Eliminamos 'position: fixed' para que el contenido scrollee */
-    /* Lo centramos usando Flexbox en el contenedor #hero */
-
+.hero-contenido { /*min -20*/
     max-width: 90%; 
     padding: 40px;
     background-color: rgba(0, 0, 0, 0.4);
     border-radius: 12px;
     text-align: center;
-    z-index: 10; /* Aseguramos que esté por encima del fondo, pero ya no es fixed */
+    z-index: 10; /* Aaaseguramos que esté por encima del fondo, pero ya no es fixed */
 }
 
 .logo-principal {
@@ -129,9 +130,11 @@ este es el otro cuadrito ijijijijijijijiji
     margin: 15px 0 30px 0;
     font-style: italic;
 }
-/* ---------------------------------- */
-/* 2. BOTONES DE LUJO */
-/* ---------------------------------- */
+/*
+esto es lo del boton amarillo
+el efecto glow de tiktok q vimos
+https://www.youtube.com/watch?v=b_8fHNIHFk4
+*/
 
 .boton-lujo-hero, .boton-lujo-inline {
     display: inline-block;
@@ -173,6 +176,7 @@ recorar que debem,os de arreglar lo del texto cntrado
 .contenedorFlex2 p{
     color: var(--color-tarjeta);
     font-size: 13px;
+    font-family: sans-serif;
 }
 
 .contenedorFlex2 div {
@@ -190,6 +194,7 @@ recorar que debem,os de arreglar lo del texto cntrado
     font-style: italic;
     text-align: center;
 }
+
 /* Ordenamiento en flexbox */
 .objeto1-2 { order: 1; }
 .objeto2-2 { order: 2; }
@@ -252,12 +257,11 @@ Contenedores pero con imagenes
 .objeto-contenedor {
     display: flex;
     width: 100%;
-    height: 250px;           /* Ajusta a tu gusto */
+    height: 250px;   
     background-color: var(--color-secundario);  
     overflow: hidden;
 }
 
-/* Mitad izquierda (Imagen) */
 .objeto-img {
     width: 50%;
     height: 100%;
@@ -269,13 +273,12 @@ Contenedores pero con imagenes
     object-fit: cover;
 }
 
-/* Mitad derecha (Texto + título) */
 .objeto-info {
     width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;       /* Centra el h3 y el texto */
+    align-items: center;       /* esto centra el h3 y el texto */
     padding: 20px;
     text-align: center;
     
@@ -340,7 +343,7 @@ Esto es el estilo de los horarios
 
 */
 .contenedor-horarios {
-    width: 80%; /* Ajusta a tu gusto */
+    width: 80%;
     margin: 3em auto;
     padding: 20px;
     background-color: #fff;

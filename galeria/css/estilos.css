@@ -1,6 +1,6 @@
-:root {
-    --color-principal: #D4AF37; /* Dorado/Ocre */
-    --color-fondo: #eeeeee;    /* Gris muy oscuro */
+:root { /*no cambiar las asignaciones*/
+    --color-principal: #D4AF37;
+    --color-fondo: #eeeeee;
     --color-texto-claro: #303030;
     --color-texto-oscuro: #302F2F;
     --color-borde-tarjeta: #d4af37; 
@@ -14,13 +14,91 @@ body {
     padding: 0;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #eeeeee; /*NOTA MENTAL no olvidar cabiar el color en las otras páginas*/
+    background-color: var(--color-fondo);
+    color: var(--color-texto-claro);
+    line-height: 1.6;
 }
 
+
+/*esto es la galeria
+ver video donde esta el coodigoo
+https://www.youtube.com/shorts/UUH_3Thiyh0
+*/
+
+
+.galeria-interactiva {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.gi-contenedor-galeria {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.gi-galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    max-width: 600px;
+}
+
+.gi-contenedor-imagen {
+    position: relative;
+    width: auto;
+    border-radius: 6px;
+    height: auto;
+    overflow: hidden;
+    background-color: #efefef;
+    transition: 0.4s ease-in-out;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.5);
+    flex: 0.25;
+}
+
+.gi-contenedor-imagen img {
+    height: 150px;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* esto es lo q se hace q se expanda*/
+.gi-contenedor-imagen:hover {
+    flex: 2;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+/*esto es la desc de cada cosa */
+.gi-info {
+    text-align: center;
+    padding: 10px 5px;
+}
+
+/* el title dorado*/
+.gi-info h3 {
+    font-size: 1.3rem;
+    color: var(--color-principal);
+    margin: 5px 0 2px 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* esto es la desc de cada cosa  */
+.gi-info p {
+    color: var(--color-texto-claro);
+    font-size: 1rem;
+    opacity: 0.85;
+    margin: 0;
+}
+
+
+
 /*
-----------------------------------
-Esto aplica para todas las páginas, solo hago un copy paste hasta el otro cuadrito ijijijijijijijiji
-----------------------------------
+es el encabezado, aplica pra todas las paginas, solo copia del de la pag principal hasta el nuevo
 */
 #encabezado {
     background-color: #302f2f;
@@ -43,12 +121,11 @@ Esto aplica para todas las páginas, solo hago un copy paste hasta el otro cuadr
                 color 0.3s ease;
 }
 
-#encabezado nav a:hover { /*este es el efecto cuando se pasa el cursor, en la tarea 12 creo q se enesño esto, lu porfis revisalo*/
+#encabezado nav a:hover {
     transform: scale(1.08);
     color: #d4af37;
     box-shadow: 0 0 12px rgba(212, 175, 55, 0.6);
 }
-
 
 #encabezado img {
     width: 125px;
@@ -71,137 +148,9 @@ Esto aplica para todas las páginas, solo hago un copy paste hasta el otro cuadr
     background-color: rgb(255, 255, 255);
     text-align: center;
 }
-/*
-----------------------------------
-este es el otro cuadrito ijijijijijijijiji
-----------------------------------
-*/
 
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: var(--color-fondo);
-    color: var(--color-texto-claro);
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-}
+/*el p de pag*/
 
-.contenedor {
-    width: 90%;
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 20px 0;
-}
-
-#galeria h2 {
-    text-align: left;
-    font-size: 2.5rem;
-    color: var(--color-principal);
-    margin-bottom: 5px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-}
-
-.subtitulo {
-    text-align: left;
-    font-size: 1.1rem;
-    color: var(--color-texto-claro);
-    margin-bottom: 40px;
-    opacity: 0.8;
-    font-style: italic;
-}
-
----
-
-/* ==================================== */
-/* 2. ESTILOS DE LA GALERÍA DE TARJETAS (CORRECCIÓN DE TAMAÑO) */
-/* ==================================== */
-
-.galeria-masonry {
-    display: block; 
-    padding: 0;
-}
-
-/* Estilos para cada ítem (la tarjeta) */
-.masonry-item {
-    background-color: var(--color-texto-oscuro);
-    border: 1px solid var(--color-borde-tarjeta);
-    border-radius: 4px; 
-    overflow: hidden;
-    margin-bottom: 30px; 
-    box-shadow: 0 4px 10px #D4AF37;
-    transition: box-shadow 0.3s ease;
-    
-    /* ELIMINAMOS cualquier referencia a grid-row-end */
-}
-
-.masonry-item:hover {
-    box-shadow: 0 6px 15px rgba(212, 175, 55, 0.3);
-}
-
-
-.masonry-item img {
-    width: 100%;
-    /* **Ajuste:** Fija la altura de todas las imágenes a un valor consistente. 
-       Aquí se usa 400px, puedes ajustarlo a tu gusto. */
-    height: 400px; 
-    display: block;
-    /* Esto asegura que la imagen cubra el área sin deformarse, 
-       recortando si es necesario. */
-    object-fit: cover; 
-    transition: opacity 0.3s ease-in-out;
-}
-
-.masonry-item:hover img {
-    opacity: 0.9;
-}
-
-/* Estilos para el texto de descripción (Mismos) */
-.masonry-info {
-    padding: 15px 20px;
-    text-align: center; 
-    border-top: 1px solid var(--color-borde-tarjeta);
-}
-
-.masonry-info h3 {
-    margin-top: 0;
-    margin-bottom: 5px;
-    color: var(--color-principal); 
-    font-size: 1.4rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-.masonry-info p {
-    margin: 0;
-    font-size: 1rem;
-    color: var(--color-texto-claro);
-    opacity: 0.8;
-}
-
-
-@media (max-width: 500px) {
-    .contenedor {
-        width: 95%;
-        padding: 15px 0;
-    }
-    
-
-    .masonry-item img {
-        height: 250px; 
-    }
-}
-
-
-/*estilos de l pie de pag*/
-/*
-------------
-
-Lu, de aqui hasta donde dice lo del footer copi, debes de copiarlo en tus paginas q te tocaron para que todo 
-tenga el mismo diseño, trata d averogiar como chingados hacer el efecto del brillo que vimos en tiktok
-
-------------
-*/
 .footer {
     background-color: #111;
     color: #e8e8e8;
@@ -223,7 +172,6 @@ tenga el mismo diseño, trata d averogiar como chingados hacer el efecto del bri
     margin: 8px 0;
 }
 
-/* recuerda utilizar el display flex para esto porfisss */
 .redes-sociales {
     margin: 20px 0;
     display: flex;
@@ -231,10 +179,6 @@ tenga el mismo diseño, trata d averogiar como chingados hacer el efecto del bri
     gap: 20px;
 }
 
-/*
-lucio, si queremos hacer elpie de pagina bien, ve este video porfisssss
-https://www.youtube.com/watch?v=sgDabqmtLUg
-*/
 .redes-sociales .icono {
     font-size: 1.4rem;
     color: #c3a45a;
@@ -249,7 +193,6 @@ https://www.youtube.com/watch?v=sgDabqmtLUg
     transition: 0.3s ease;
 }
 
-/* esto es el efecto cuando pasas el cursor por los iconos, pero da error pork se invieren collores*/
 .redes-sociales .icono:hover {
     transform: scale(1.15);
     box-shadow: 0 0 12px #d4b56c;
@@ -261,4 +204,87 @@ https://www.youtube.com/watch?v=sgDabqmtLUg
     font-size: 0.9rem;
     color: #b1b1b1;
     margin-top: 15px;
+}
+
+/*lo del h1*/
+#titulo {
+    /*poner titulo de otro color q no sea dorado, c ve horrible*/
+    font-family: 'Playfair Display', serif;
+    font-size: 5rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #d4af37;
+}
+.holi {
+    justify-items: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+/*separacion*/
+#subtituloMenu {
+    font-size: 3.5rem;
+    background-color: #c9c9c9;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 600;
+    color: #c3a45a;
+    text-align: center;
+    margin: 40px 0 25px 0;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+/* Líneas decorativas a los lados
+https://www.youtube.com/watch?v=xZakiEiPEXQ
+*/
+
+#subtituloMenu::before,
+#subtituloMenu::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 32%;
+    height: 1px;
+    background: linear-gradient(to right, transparent, #c3a45a);
+}
+
+#subtituloMenu::before {
+    left: 0;
+}
+
+#subtituloMenu::after {
+    right: 0;
+    background: linear-gradient(to left, transparent, #c3a45a);
+}
+
+/*Aqui van lo de las experencias, reutilizado de la tarea 19*/
+.noticias {
+    border: 0.1em solid rgb(0, 0, 0);
+    grid-column: 1 / 5;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2fr);
+}
+
+.noticias h2 {
+    grid-column: 1 / 3;
+    align-content: center;
+    text-align: center;
+}
+
+.noticia {
+    border: 0.2em solid rgb(0, 0, 0);
+    box-shadow: 0.2em 0.2em 0.2em black;
+    align-content: center;
+    text-align: center;
+}
+
+.noticiatitulo {
+    background-color: #302f2f;
+    color: #d4af37;
+        align-content: center;
+    text-align: center;
 }

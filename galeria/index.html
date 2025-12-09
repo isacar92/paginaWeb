@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilos.css">
     <meta name="author" content="Monzati Team">
-    <title>Monzati - Galería de Platillos y Ambiente (Versión Inicial)</title>
+    <title>Monzati - Galería</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -14,53 +15,725 @@
         <img src="../images/img1.png" alt="logo_noticiero">
         <nav id="navegacion">
             <a href="../index.html">Página principal</a>
+            <a href="../menu/menu.html">Menús</a>
             <a href="../promociones/index.html">Promociones</a>
-            <a href="#">Enlace 3</a>
         </nav>
     </header>
-<br><br><br><br><br><br><br><br><br><br>
-
-<!--Esto es lo principal-->
-<section id="galeria" class="contenedor">
-        <h2>GALERÍA MONZATI</h2>
-        <p class="subtitulo">Una muestra de nuestros platillos estrella y el ambiente que nos define.</p>
-        <div class="galeria-masonry">
-            
-            <div class="masonry-item">
-                <img src="IMAGENES/lasaña.jpg" alt="Platillo de autor Lasaña al chipotle">
-                <div class="masonry-info">
-                    <h3>LASAÑA AL CHIPOTLE</h3>
-                    <p>Un toque picante y elegante que redefine nuestro menú.</p>
-                </div>
-            </div>
-
-            <div class="masonry-item">
-                <img src="https://placehold.co/600x700/302F2F/D4AF37?text=SALON+PRINCIPAL" alt="Vista interior del restaurante">
-                <div class="masonry-info">
-                    <h3>VISTA INTERIOR SALÓN</h3>
-                    <p>Lujo y calidez en cada rincón, ambiente perfecto para la velada.</p>
-                </div>
-            </div>
-
-            <div class="masonry-item">
-                <img src="https://placehold.co/600x500/302F2F/D4AF37?text=MARGARITA+DORADA" alt="Bebida especial Margarita Dorada">
-                <div class="masonry-info">
-                    <h3>MARGARITA DORADA</h3>
-                    <p>El elixir de la noche, una mezcla vibrante y sofisticada.</p>
-                </div>
-            </div>
-
-            <div class="masonry-item">
-                <img src="https://placehold.co/600x450/302F2F/D4AF37?text=CHEF+EJECUTIVO" alt="Chef preparando alimentos en la cocina">
-                <div class="masonry-info">
-                    <h3>CHEF EN ACCIÓN</h3>
-                    <p>La esencia de nuestro sabor, donde la tradición se une a la innovación.</p>
-                </div>
-            </div>
-            
-        </div> <!-- Fin galeria-masonry -->
+<br><br><br><br><br><br><br><br><br><br> <!--no borrar-->
+<!--Aqui va la galería-->
+<main>
+    <section class="holi">
+        <h1 id="titulo">Galería Fotográfica</h1>
     </section>
-    <!-- FIN DE LA SECCIÓN: GALERÍA DE FOTOS -->
+
+    <section class="noticias">
+        <article class="noticiatitulo">
+            <h2>Experiencia Visual</h2>
+            <p>
+                Explora la esencia visual de MONZATI: una experiencia gastronómica que honra la tradición náhuatl a través de espacios, platillos y momentos únicos.
+                <br> Cada imagen captura la fusión entre técnicas ancestrales, ingredientes originarios y una presentación gourmet que enaltece el espíritu de nuestra cultura. <BR></BR>
+                Bienvenido a un recorrido visual por la cocina que celebra nuestras raíces.
+            </p>
+        </article>
+    </section>
+
+    <!--
+    si se puede isar despues ok, pero la mierda no funciona
+    <section>
+            <h3 id="subtituloMenu">Entradas</h3>
+    </section>
+    -->
+
+
+    <!--Esto es el titulo y descripcion de la seccion-->
+    <section class="noticias">
+        <article class="noticia">
+            <h3>1. Platillos Emblemáticos</h3>
+            <p>
+                Esta sección muestra la esencia culinaria de MONZATI: platos que fusionan técnicas ancestrales con la estética refinada de la cocina gourmet. Cada preparación honra ingredientes originarios y rescata sabores de la tradición náhuatl, presentados con elegancia moderna.
+            </p>
+        </article>
+    </section>
+    <!--galeria-->
+    <section class="galeria-interactiva">
+        <div class="gi-contenedor-galeria">
+            <div class="gi-galeria">
+                <div class="gi-contenedor-imagen">
+                    <figure>
+                        <img src="IMAGENES/pe1.jpeg" alt="platilloEmblematico1">
+                    </figure>
+                    <div class="gi-info">
+                        <h3>Mole Ancestral de Tres Chiles</h3>
+                        <p>Un mole inspirado en recetas prehispánicas, montado en plato de barro fino y decorado con semillas tostadas.</p>
+                    </div>
+                </div>
+
+                <div class="gi-contenedor-imagen">
+                    <figure>
+                        <img src="IMAGENES/pe2.jpg" alt="platilloEmblematico2">
+                    </figure>
+                    <div class="gi-info">
+                        <h3>Tamal Gourmet en Hoja de Milpa</h3>
+                        <p>Tamal suave relleno de ingredientes criollos, presentado con flores comestibles y salsas naturales.</p>
+                    </div>
+                </div>
+
+                <div class="gi-contenedor-imagen">
+                    <figure>
+                        <img src="IMAGENES/pe3.webp" alt="platilloEmblematico3">
+                    </figure>
+                    <div class="gi-info">
+                        <h3>Tlayuda de Maíz Nativo Premium</h3>
+                        <p>Base de maíz azul con carnes sazonadas y vegetales frescos; un clásico oaxaqueño reinterpretado.</p>
+                    </div>
+                </div>
+
+                <div class="gi-contenedor-imagen">
+                    <figure>
+                        <img src="IMAGENES/pe4.jpeg" alt="platilloEmblematico4">
+                    </figure>
+                    <div class="gi-info">
+                        <h3>Lomo en Salsa Prehispánica</h3>
+                        <p>Carne tierna bañada en reducción de chile pasilla, cacao y especias de la época náhuatl.</p>
+                    </div>
+                </div>
+
+                            <div class="gi-contenedor-imagen">
+                    <figure>
+                        <img src="IMAGENES/pe5.webp" alt="platilloEmblematico5">
+                    </figure>
+                    <div class="gi-info">
+                        <h3>Sopa Ancestral de Amaranto</h3>
+                        <p>Caldo aromático servido en bowl de cerámica artesanal, con amaranto dorado y hierbas nativas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Ingredientes Ancestrales -->
+    <section class="noticias">
+        <article class="noticia">
+            <h3>2. Ingredientes Ancestrales</h3>
+            <p>
+                Esta sección celebra la riqueza natural que da vida a la cocina náhuatl. Los ingredientes que utilizamos en MONZATI provienen de variedades nativas de maíz, cacao, chiles, hierbas y semillas que han formado parte de la gastronomía ancestral por siglos. Cada imagen muestra la pureza, textura y color que estos elementos aportan a nuestros platillos gourmet.
+            </p>
+        </article>
+    </section>
+
+    <section class="galeria-interactiva">
+        <div class="gi-contenedor-galeria">
+            <div class="gi-galeria">
+
+                <div class="gi-contenedor-imagen">
+                    <figure>
+                        <img src="IMAGENES/ia1.jpeg" alt="ingredienteAncestral1">
+                    </figure>
+                    <div class="gi-info">
+                        <h3>Mazorca de Maíz Azul</h3>
+                        <p>Maíz criollo de color profundo, base fundamental de la cocina mesoamericana.</p>
+                    </div>
+                </div>
+
+                <div class="gi-contenedor-imagen">
+                    <figure>
+                        <img src="IMAGENES/ia2.jpeg" alt="ingredienteAncestral2">
+                    </figure>
+                    <div class="gi-info">
+                        <h3>Cacao en Grano</h3>
+                        <p>Semillas de cacao tostadas, utilizadas desde tiempos prehispánicos en bebidas y salsas.</p>
+                    </div>
+                </div>
+
+                <div class="gi-contenedor-imagen">
+                    <figure>
+                        <img src="IMAGENES/ia3.jpeg" alt="ingredienteAncestral3">
+                    </figure>
+                    <div class="gi-info">
+                        <h3>Chiles Secos</h3>
+                        <p>Combinación de chiles nativos que aportan profundidad y complejidad al sabor.</p>
+                    </div>
+                </div>
+
+                <div class="gi-contenedor-imagen">
+                    <figure>
+                        <img src="IMAGENES/ia4.jpeg" alt="ingredienteAncestral4">
+                    </figure>
+                    <div class="gi-info">
+                        <h3>Hierbas Aromáticas</h3>
+                        <p>Hojas de epazote, hierba santa y otras plantas utilizadas desde tiempos ancestrales.</p>
+                    </div>
+                </div>
+
+                <div class="gi-contenedor-imagen">
+                    <figure>
+                        <img src="IMAGENES/ia5.jpeg" alt="ingredienteAncestral5">
+                    </figure>
+                    <div class="gi-info">
+                        <h3>Especias Originarias</h3>
+                        <p>Sales minerales, semillas y condimentos tradicionales de la cocina náhuatl.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. El Arte del Emplatado -->
+
+    <section class="noticias">
+        <article class="noticia">
+            <h3>3. El Arte del Emplatado</h3>
+            <p>
+                En esta sección se destaca la estética visual detrás de cada preparación. El arte del emplatado en MONZATI combina la elegancia de la alta cocina con el respeto por la tradición náhuatl, creando composiciones visuales que exaltan colores, texturas y formas naturales.
+            </p>
+        </article>
+    </section>
+
+    <section class="galeria-interactiva">
+        <div class="gi-contenedor-galeria">
+            <div class="gi-galeria">
+
+                <div class="gi-contenedor-imagen">
+                    <figure>
+                        <img src="IMAGENES/ae1.jpeg" alt="arteEmplatado1">
+                    </figure>
+                    <div class="gi-info">
+                        <h3>Decoración con Flores Comestibles</h3>
+                        <p>Toques florales que elevan la armonía visual y el frescor del platillo.</p>
+                    </div>
+                </div>
+
+                <div class="gi-contenedor-imagen">
+                    <figure>
+                        <img src="IMAGENES/ae2.jpg" alt="arteEmplatado2">
+                    </figure>
+                    <div class="gi-info">
+                        <h3>Trazos de Salsas Naturales</h3>
+                        <p>Líneas y puntos artísticos que evocan símbolos de la iconografía náhuatl.</p>
+                    </div>
+                </div>
+
+                <div class="gi-contenedor-imagen">
+                    <figure>
+                        <img src="IMAGENES/ae3.jpg" alt="arteEmplatado3">
+                    </figure>
+                    <div class="gi-info">
+                        <h3>Montaje Gourmet</h3>
+                        <p>Composiciones elegantes que combinan ingredientes nativos con técnicas modernas.</p>
+                    </div>
+                </div>
+
+                <div class="gi-contenedor-imagen">
+                    <figure>
+                        <img src="IMAGENES/ae4.jpeg" alt="arteEmplatado4">
+                    </figure>
+                    <div class="gi-info">
+                        <h3>Texturas en Armonía</h3>
+                        <p>Crujientes, suaves y cremosos unificados en un mismo plato.</p>
+                    </div>
+                </div>
+
+                <div class="gi-contenedor-imagen">
+                    <figure>
+                        <img src="IMAGENES/ae5.jpeg" alt="arteEmplatado5">
+                    </figure>
+                    <div class="gi-info">
+                        <h3>Decoración con Símbolos Náhuatl</h3>
+                        <p>Elementos visuales inspirados en códices que enriquecen la narrativa del plato.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Cultura y Tradición -->
+
+
+    <section class="noticias">
+        <article class="noticia">
+            <h3>4. Cultura y Tradición</h3>
+            <p>
+                Esta sección rinde homenaje a la identidad visual y cultural que inspira a MONZATI. Los elementos arquitectónicos, decorativos y simbólicos presentes en el restaurante evocan la grandeza de las civilizaciones mesoamericanas y elevan la experiencia del comensal.
+            </p>
+        </article>
+    </section>
+
+    <section class="galeria-interactiva">
+        <div class="gi-contenedor-galeria">
+            <div class="gi-galeria">
+
+                <div class="gi-contenedor-imagen">
+                    <figure>
+                        <img src="IMAGENES/ct1.jpeg" alt="culturaTradicion1">
+                    </figure>
+                    <div class="gi-info">
+                        <h3>Texturas de Madera y Barro</h3>
+                        <p>Materiales naturales que evocan la construcción tradicional mesoamericana.</p>
+                    </div>
+                </div>
+
+                <div class="gi-contenedor-imagen">
+                    <figure>
+                        <img src="IMAGENES/ct2.webp" alt="culturaTradicion2">
+                    </figure>
+                    <div class="gi-info">
+                        <h3>Grabados Inspirados en Códices</h3>
+                        <p>Diseños visuales que representan símbolos y relatos de la cosmovisión náhuatl.</p>
+                    </div>
+                </div>
+
+                <div class="gi-contenedor-imagen">
+                    <figure>
+                        <img src="IMAGENES/ct3.jpeg" alt="culturaTradicion3">
+                    </figure>
+                    <div class="gi-info">
+                        <h3>Decoración con Elementos Artesanales</h3>
+                        <p>Piezas creadas por artesanos locales utilizando técnicas tradicionales.</p>
+                    </div>
+                </div>
+
+                <div class="gi-contenedor-imagen">
+                    <figure>
+                        <img src="IMAGENES/ct4.jpeg" alt="culturaTradicion4">
+                    </figure>
+                    <div class="gi-info">
+                        <h3>Iluminación Cálida</h3>
+                        <p>Ambientes suaves que transmiten calidez y elegancia.</p>
+                    </div>
+                </div>
+
+                <div class="gi-contenedor-imagen">
+                    <figure>
+                        <img src="IMAGENES/ct5.avif" alt="culturaTradicion5">
+                    </figure>
+                    <div class="gi-info">
+                        <h3>Patrones Inspirados en Mesoamérica</h3>
+                        <p>Diseños geométricos que recuerdan la estética prehispánica.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. El Ambiente MONZATI -->
+
+    <section class="noticias">
+        <article class="noticia">
+            <h3>5. El Ambiente MONZATI</h3>
+            <p>
+                Esta sección muestra la atmósfera elegante y cálida del restaurante MONZATI. Un espacio donde la tradición náhuatl se fusiona con el diseño contemporáneo, creando un ambiente ideal para disfrutar de una experiencia gastronómica única.
+            </p>
+        </article>
+    </section>
+
+    <section class="galeria-interactiva">
+        <div class="gi-contenedor-galeria">
+            <div class="gi-galeria">
+
+                <div class="gi-contenedor-imagen">
+                    <figure>
+                        <img src="IMAGENES/am1.jpg" alt="ambienteMonzati1">
+                    </figure>
+                    <div class="gi-info">
+                        <h3>Mesa con Iluminación Dorada</h3>
+                        <p>Un ambiente suave que realza cada detalle de la experiencia gastronómica.</p>
+                    </div>
+                </div>
+
+                <div class="gi-contenedor-imagen">
+                    <figure>
+                        <img src="IMAGENES/am2.jpg" alt="ambienteMonzati2">
+                    </figure>
+                    <div class="gi-info">
+                        <h3>Vista General del Restaurante</h3>
+                        <p>Espacios diseñados para transmitir elegancia, tradición y calidez.</p>
+                    </div>
+                </div>
+
+                <div class="gi-contenedor-imagen">
+                    <figure>
+                        <img src="IMAGENES/am3.webp" alt="ambienteMonzati3">
+                    </figure>
+                    <div class="gi-info">
+                        <h3>Vajilla Artesanal</h3>
+                        <p>Piezas elaboradas con técnicas tradicionales y estilo contemporáneo.</p>
+                    </div>
+                </div>
+
+                <div class="gi-contenedor-imagen">
+                    <figure>
+                        <img src="IMAGENES/am4.jpeg" alt="ambienteMonzati4">
+                    </figure>
+                    <div class="gi-info">
+                        <h3>Bebidas Tradicionales</h3>
+                        <p>Preparadas con ingredientes nativos y presentadas en cristalería fina.</p>
+                    </div>
+                </div>
+
+                <div class="gi-contenedor-imagen">
+                    <figure>
+                        <img src="IMAGENES/am5.jpeg" alt="ambienteMonzati5">
+                    </figure>
+                    <div class="gi-info">
+                        <h3>Rincón Especial</h3>
+                        <p>Un espacio íntimo que fusiona decoración moderna con raíces ancestrales.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- 6. Fotografías del Restaurante -->
+
+
+<section class="noticias">
+    <article class="noticia">
+        <h3>6. Fotografías del Restaurante</h3>
+        <p>
+            Esta sección presenta la esencia visual de MONZATI: cada rincón del restaurante refleja elegancia contemporánea con inspiración náhuatl. La arquitectura, la ambientación y los detalles decorativos crean una experiencia que combina tradición ancestral con lujo moderno.
+        </p>
+    </article>
+</section>
+
+<section class="galeria-interactiva">
+    <div class="gi-contenedor-galeria">
+        <div class="gi-galeria">
+
+            <div class="gi-contenedor-imagen">
+                <figure>
+                    <img src="IMAGENES/fr1.jpeg" alt="fotoRestaurante1">
+                </figure>
+                <div class="gi-info">
+                    <h3>Entrada Principal</h3>
+                    <p>Acceso iluminado con tonos cálidos que dan la bienvenida a la experiencia MONZATI.</p>
+                </div>
+            </div>
+
+            <div class="gi-contenedor-imagen">
+                <figure>
+                    <img src="IMAGENES/fr2.webp" alt="fotoRestaurante2">
+                </figure>
+                <div class="gi-info">
+                    <h3>Comedor Central</h3>
+                    <p>Ambiente elegante con detalles inspirados en formas y símbolos ancestrales.</p>
+                </div>
+            </div>
+
+            <div class="gi-contenedor-imagen">
+                <figure>
+                    <img src="IMAGENES/fr3.webp" alt="fotoRestaurante3">
+                </figure>
+                <div class="gi-info">
+                    <h3>Vista Nocturna</h3>
+                    <p>Iluminación tenue que resalta texturas, colores y materiales orgánicos.</p>
+                </div>
+            </div>
+
+            <div class="gi-contenedor-imagen">
+                <figure>
+                    <img src="IMAGENES/fr4.jpeg" alt="fotoRestaurante4">
+                </figure>
+                <div class="gi-info">
+                    <h3>Detalles Decorativos</h3>
+                    <p>Elementos artesanales creados por artistas locales en honor a la cultura náhuatl.</p>
+                </div>
+            </div>
+
+            <div class="gi-contenedor-imagen">
+                <figure>
+                    <img src="IMAGENES/fr5.jpeg" alt="fotoRestaurante5">
+                </figure>
+                <div class="gi-info">
+                    <h3>Zona de Recepción</h3>
+                    <p>Un espacio acogedor donde tradición y diseño contemporáneo se encuentran.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- 7. Instalaciones -->
+
+<section class="noticias">
+    <article class="noticia">
+        <h3>7. Instalaciones</h3>
+        <p>
+            MONZATI cuenta con espacios diseñados para ofrecer comodidad, estética y funcionalidad. Desde áreas privadas hasta zonas de bar y terrazas, las instalaciones fueron pensadas para crear una experiencia envolvente en cada visita.
+        </p>
+    </article>
+</section>
+
+<section class="galeria-interactiva">
+    <div class="gi-contenedor-galeria">
+        <div class="gi-galeria">
+
+            <div class="gi-contenedor-imagen">
+                <figure>
+                    <img src="IMAGENES/in1.jpeg" alt="instalacion1">
+                </figure>
+                <div class="gi-info">
+                    <h3>Zona Lounge</h3>
+                    <p>Espacio relajado con iluminación cálida para disfrutar antes de la cena.</p>
+                </div>
+            </div>
+
+            <div class="gi-contenedor-imagen">
+                <figure>
+                    <img src="IMAGENES/in2.jpg" alt="instalacion2">
+                </figure>
+                <div class="gi-info">
+                    <h3>Bar Artesanal</h3>
+                    <p>Bebidas tradicionales y cócteles de autor preparados con ingredientes originarios.</p>
+                </div>
+            </div>
+
+            <div class="gi-contenedor-imagen">
+                <figure>
+                    <img src="IMAGENES/in3.jpg" alt="instalacion3">
+                </figure>
+                <div class="gi-info">
+                    <h3>Terraza</h3>
+                    <p>Espacio al aire libre con decoración inspirada en elementos naturales.</p>
+                </div>
+            </div>
+
+            <div class="gi-contenedor-imagen">
+                <figure>
+                    <img src="IMAGENES/in4.jpeg" alt="instalacion4">
+                </figure>
+                <div class="gi-info">
+                    <h3>Salón Privado</h3>
+                    <p>Área elegante ideal para reuniones íntimas o celebraciones exclusivas.</p>
+                </div>
+            </div>
+
+            <div class="gi-contenedor-imagen">
+                <figure>
+                    <img src="IMAGENES/in5.jpg" alt="instalacion5">
+                </figure>
+                <div class="gi-info">
+                    <h3>Cocina Abierta</h3>
+                    <p>Un vistazo al arte culinario con técnicas ancestrales reinterpretadas.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- 8. Platillos Destacados -->
+
+<section class="noticias">
+    <article class="noticia">
+        <h3>8. Platillos Destacados</h3>
+        <p>
+            Esta sección reúne los platillos más representativos del restaurante. Preparaciones que fusionan técnicas antiguas con presentaciones modernas, enalteciendo ingredientes nativos y sabores auténticos de la gastronomía náhuatl.
+        </p>
+    </article>
+</section>
+
+<section class="galeria-interactiva">
+    <div class="gi-contenedor-galeria">
+        <div class="gi-galeria">
+
+            <div class="gi-contenedor-imagen">
+                <figure>
+                    <img src="IMAGENES/pd1.jpg" alt="platilloDestacado1">
+                </figure>
+                <div class="gi-info">
+                    <h3>Pipían Real Dorado</h3>
+                    <p>Salsa ancestral de semillas con montaje elegante y flores comestibles.</p>
+                </div>
+            </div>
+
+            <div class="gi-contenedor-imagen">
+                <figure>
+                    <img src="IMAGENES/pd2.jpeg" alt="platilloDestacado2">
+                </figure>
+                <div class="gi-info">
+                    <h3>Tamal de Quinoa y Maíz Nativo</h3>
+                    <p>Texturas suaves y aromas tradicionales en una presentación moderna.</p>
+                </div>
+            </div>
+
+            <div class="gi-contenedor-imagen">
+                <figure>
+                    <img src="IMAGENES/pd3.jpg" alt="platilloDestacado3">
+                </figure>
+                <div class="gi-info">
+                    <h3>Pescado en Hoja Santa</h3>
+                    <p>Pescado envuelto en hierba sagrada con toques de limón criollo.</p>
+                </div>
+            </div>
+
+            <div class="gi-contenedor-imagen">
+                <figure>
+                    <img src="IMAGENES/pd4.jpeg" alt="platilloDestacado4">
+                </figure>
+                <div class="gi-info">
+                    <h3>Carne en Salsa de Cacao</h3>
+                    <p>Fusión entre intensidad del cacao y especias prehispánicas.</p>
+                </div>
+            </div>
+
+            <div class="gi-contenedor-imagen">
+                <figure>
+                    <img src="IMAGENES/pd5.jpg" alt="platilloDestacado5">
+                </figure>
+                <div class="gi-info">
+                    <h3>Ensalada de Amaranto</h3>
+                    <p>Ingredientes frescos con amaranto tostado y aderezo artesanal.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- 9. Eventos Especiales -->
+
+<section class="noticias">
+    <article class="noticia">
+        <h3>9. Eventos Especiales</h3>
+        <p>
+            MONZATI es escenario de celebraciones únicas. Desde cenas temáticas hasta degustaciones privadas, los eventos especiales del restaurante combinan gastronomía, cultura y momentos inolvidables.
+        </p>
+    </article>
+</section>
+
+<section class="galeria-interactiva">
+    <div class="gi-contenedor-galeria">
+        <div class="gi-galeria">
+
+            <div class="gi-contenedor-imagen">
+                <figure>
+                    <img src="IMAGENES/es1.jpeg" alt="eventoEspecial1">
+                </figure>
+                <div class="gi-info">
+                    <h3>Cena de Degustación</h3>
+                    <p>Un recorrido culinario guiado por el chef con platillos exclusivos.</p>
+                </div>
+            </div>
+
+            <div class="gi-contenedor-imagen">
+                <figure>
+                    <img src="IMAGENES/es2.jpeg" alt="eventoEspecial2">
+                </figure>
+                <div class="gi-info">
+                    <h3>Noche Temática Náhuatl</h3>
+                    <p>Experiencia inmersiva con música, decoración y menú especial.</p>
+                </div>
+            </div>
+
+            <div class="gi-contenedor-imagen">
+                <figure>
+                    <img src="IMAGENES/es3.jpg" alt="eventoEspecial3">
+                </figure>
+                <div class="gi-info">
+                    <h3>Presentación de Cacao</h3>
+                    <p>Demostración de preparación tradicional del cacao ceremonial.</p>
+                </div>
+            </div>
+
+            <div class="gi-contenedor-imagen">
+                <figure>
+                    <img src="IMAGENES/es4.jpg" alt="eventoEspecial4">
+                </figure>
+                <div class="gi-info">
+                    <h3>Maridaje de Agave</h3>
+                    <p>Selección especial de mezcales y destilados artesanales.</p>
+                </div>
+            </div>
+
+            <div class="gi-contenedor-imagen">
+                <figure>
+                    <img src="IMAGENES/es5.jpeg" alt="eventoEspecial5">
+                </figure>
+                <div class="gi-info">
+                    <h3>Celebración Privada</h3>
+                    <p>Eventos personalizados con ambientación única y menú exclusivo.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- 10. Momentos Memorables -->
+
+<section class="noticias">
+    <article class="noticia">
+        <h3>10. Momentos Memorables</h3>
+        <p>
+            Una colección de instantes que capturan la esencia humana de MONZATI: sonrisas, brindis, celebraciones y momentos que los comensales guardan como parte de su experiencia en el restaurante.
+        </p>
+    </article>
+</section>
+
+<section class="galeria-interactiva">
+    <div class="gi-contenedor-galeria">
+        <div class="gi-galeria">
+
+            <div class="gi-contenedor-imagen">
+                <figure>
+                    <img src="IMAGENES/mo1.jpg" alt="momentoMemorable1">
+                </figure>
+                <div class="gi-info">
+                    <h3>Brindis Especial</h3>
+                    <p>Celebración íntima entre amigos y familia con bebidas artesanales.</p>
+                </div>
+            </div>
+
+            <div class="gi-contenedor-imagen">
+                <figure>
+                    <img src="IMAGENES/mo2.jpeg" alt="momentoMemorable2">
+                </figure>
+                <div class="gi-info">
+                    <h3>Primera Cita</h3>
+                    <p>Ambiente cálido ideal para compartir una experiencia gastronómica única.</p>
+                </div>
+            </div>
+
+            <div class="gi-contenedor-imagen">
+                <figure>
+                    <img src="IMAGENES/mo3.jpeg" alt="momentoMemorable3">
+                </figure>
+                <div class="gi-info">
+                    <h3>Celebración de Cumpleaños</h3>
+                    <p>Un momento lleno de alegría acompañado de postres artesanales.</p>
+                </div>
+            </div>
+
+            <div class="gi-contenedor-imagen">
+                <figure>
+                    <img src="IMAGENES/mo4.webp" alt="momentoMemorable4">
+                </figure>
+                <div class="gi-info">
+                    <h3>Degustación en Pareja</h3>
+                    <p>Experiencia íntima con selección especial de platillos y maridaje.</p>
+                </div>
+            </div>
+
+            <div class="gi-contenedor-imagen">
+                <figure>
+                    <img src="IMAGENES/mo5.jpg" alt="momentoMemorable5">
+                </figure>
+                <div class="gi-info">
+                    <h3>Noche Familiar</h3>
+                    <p>Convivencia cálida con ambiente tradicional y atención personalizada.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+</main>
+
 
 <!--Aqui empieza el pie de pag jsjsjs-->
     <footer class="footer">
@@ -81,5 +754,6 @@
         <p class="footer-copy">© 2025 MONZATI — Todos los derechos reservados. <br>Contenido bajo licencia Creative Commons CC BY-NC-ND.</p>
     </div>
     </footer>
+
 </body>
 </html>
